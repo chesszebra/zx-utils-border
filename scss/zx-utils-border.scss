@@ -1,0 +1,11 @@
+/// A mixin that sets the border radius in a browser independent way.
+/// @param {string} $size The size to set. You must include the size type.
+@mixin zx-border-radius($size) {
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+  border-radius: $size;
+}
+
+.zx-no-border {
+  border: none !important;
+}
